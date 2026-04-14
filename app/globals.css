@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #7c3aed;
+  --primary-foreground: #ffffff;
+  --secondary: #2563eb;
+  --secondary-foreground: #ffffff;
+  --accent: #d2bbff;
+  --accent-foreground: #09090b;
+
+  --background: #09090b;
+  --foreground: #ffffff;
+
+  --muted: #1c1b1d;
+  --muted-foreground: #ccc3d8;
+
+  --border: #2a2a2c;
+  --ring: #d2bbff;
+
+  --destructive: #ffb4ab;
+
+  --card: #131315;
+  --card-foreground: #ffffff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  letter-spacing: -0.02em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.05em;
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-4;
+}
+
+/* Editorial section spacing helpers */
+.section {
+  @apply py-20 md:py-28;
+}
+
+/* Subtle glass utility (no 1px borders) */
+.glass {
+  background: rgba(19, 19, 21, 0.55);
+  backdrop-filter: blur(18px);
+}
